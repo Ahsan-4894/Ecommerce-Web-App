@@ -19,7 +19,7 @@ services:
     ports:
       - "5431:5432"
     environment:
-      - POSTGRES_PASSWORD=ahsan130104
+      - POSTGRES_PASSWORD=password
     volumes:
       - ./db_backup:/docker-entrypoint-initdb.d #initialize database
       - pgdata:/var/lib/postgresql/data # persist data
